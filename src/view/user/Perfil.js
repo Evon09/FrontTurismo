@@ -61,7 +61,7 @@ const Perfil = () => {
             img={item.passeios[0].imagem}
             valor={somaPrecosPasseios(item.passeios)}
             key={item.id}
-            descricao={item.passeios}
+            descricao={item.clientes}
           ></SimpleReservaAdm>
         ))
       : null;
@@ -77,7 +77,7 @@ const Perfil = () => {
         marginTop="20px"
       >
         <PerfilUser />
-        {adm ? pacotesList : pacotesListAdm}
+        {adm ? pacotesListAdm : pacotesList}
       </Flex>
     </>
   );

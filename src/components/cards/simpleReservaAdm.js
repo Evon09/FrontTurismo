@@ -88,8 +88,8 @@ export default function SimpleReservaAdm({
             {descricao && descricao.length > 0 ? (
               descricao.map((item, index) => (
                 <Flex key={index} direction="column">
-                  <Text fontSize="20px">{item.destino}</Text>
-                  <Text fontSize="15px">{item.itinerario}</Text>
+                  <Text fontSize="20px">{item.nome}</Text>
+                  <Text fontSize="15px">{item.email}</Text>
                 </Flex>
               ))
             ) : (
